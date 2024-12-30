@@ -5,7 +5,3 @@
 html {
   scroll-behavior: smooth;
 }
-
-.group:hover .group-hover\:scale-110 {
-  transform: scale(1.1);
-}
