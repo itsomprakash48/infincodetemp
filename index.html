@@ -1,157 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TechCorp - Digital Innovation Solutions</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infinicode - Digital Transformation Solutions</title>
     <link rel="stylesheet" href="/style.css">
-  </head>
-  <body>
-    <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
-      <nav class="container mx-auto px-4 py-4">
-        <div class="flex items-center justify-between">
-          <a href="#" class="text-2xl font-bold text-blue-600">TechCorp</a>
-          
-          <!-- Desktop Navigation -->
-          <div class="hidden md:flex items-center space-x-8">
-            <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
-            <a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors">Services</a>
-            <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About Us</a>
-            <button class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
-              Get Started
-            </button>
-          </div>
+</head>
 
-          <!-- Mobile Menu Button -->
-          <button id="menuBtn" class="md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
+<body>
 
-        <!-- Mobile Navigation Menu -->
-        <div id="mobileMenu" class="hidden md:hidden mt-4">
-          <a href="#" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors">Home</a>
-          <a href="#services" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors">Services</a>
-          <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors">About Us</a>
-          <button class="w-full bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors mt-4">
-            Get Started
-          </button>
+    <!-- Header -->
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="#">Infinicode</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#industries">Industries</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#insights">Insights</a></li>
+                    <li><a href="#contact" class="cta-btn">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="toggleSideNav()" aria-label="Open menu">&#9776;</div>
         </div>
-      </nav>
     </header>
 
+    <!-- Side Navigation for Mobile -->
+    <div id="sideNav" class="side-nav" aria-label="Mobile Menu">
+        <span class="close-btn" onclick="toggleSideNav()" aria-label="Close menu">&times;</span>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#industries">Industries</a>
+        <a href="#about-us">About Us</a>
+        <a href="#insights">Insights</a>
+        <a href="#contact" class="cta-btn">Contact Us</a>
+    </div>
+
+    <!-- Main Content -->
     <main>
-      <!-- Hero Section -->
-      <section class="relative min-h-screen flex items-center">
-        <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')">
-          <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-600/80"></div>
-        </div>
-        <div class="container mx-auto px-4 z-10">
-          <div class="max-w-3xl">
-            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
-              Driving Digital Transformation with Innovation
-            </h1>
-            <p class="text-xl text-gray-200 mb-8">
-              Empowering businesses worldwide with cutting-edge technology solutions
-              that drive growth, efficiency, and innovation in the digital age.
-            </p>
-            <div class="flex flex-wrap gap-4">
-              <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
-                Explore Solutions
-              </button>
-              <button class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors">
-                Contact Us
-              </button>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Driving Digital Transformation with Innovation</h1>
+                <p>Your partner in next-generation IT services and digital transformation.</p>
+                <a href="#services" class="btn-main">Learn More</a>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Services Section -->
-      <section id="services" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-          <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Services
-            </h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">
-              Comprehensive technology solutions tailored to drive your business forward
-            </p>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid"></div>
-        </div>
-      </section>
+        <!-- About Us Section -->
+        <section id="about-us" class="about-us">
+            <h2>Our Mission, Vision & Values</h2>
+            <p>We empower businesses globally with cutting-edge IT solutions.</p>
+            <div class="core-values">
+                <div class="value">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRhIUq-_rO0WlNRL4ZH3hYSN8VlDTTgz6Img&s"
+                        alt="Global Expertise">
+                    <p>Global Expertise</p>
+                </div>
+                <div class="value">
+                    <img src="https://cdn.artphotolimited.com/images/frames/1000x1000/50x50-wood-black-en.jpg"
+                        alt="Innovation">
+                    <p>Innovation at Core</p>
+                </div>
+                <div class="value">
+                    <img src="https://cdn.artphotolimited.com/images/frames/1000x1000/50x50-wood-black-en.jpg"
+                        alt="Technology Leadership">
+                    <p>Technology Leadership</p>
+                </div>
+            </div>
+        </section>
 
-      <!-- About Section -->
-      <section id="about" class="py-20">
-        <div class="container mx-auto px-4">
-          <div class="max-w-3xl mx-auto text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              About TechCorp
-            </h2>
-            <p class="text-gray-600">
-              We are a global technology leader committed to driving innovation and
-              digital transformation across industries.
-            </p>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16" id="stats-grid"></div>
-        </div>
-      </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTsuvQc6ZcIx5ri8fAipdTRDX7tTxLaWmdQ&s"
+                        alt="Cloud Computing">
+                    <h3>Develop Website for Clients</h3>
+                    <p>Custom applications tailored to meet your business needs.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTsuvQc6ZcIx5ri8fAipdTRDX7tTxLaWmdQ&s"
+                        alt="IT Consulting">
+                    <h3>Develop Android/iOS Apps</h3>
+                    <p>Mobile applications designed for both Android and iOS platforms.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTsuvQc6ZcIx5ri8fAipdTRDX7tTxLaWmdQ&s"
+                        alt="AI Solutions">
+                    <h3>AI Solutions</h3>
+                    <p>Innovative AI-powered solutions to boost efficiency.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTsuvQc6ZcIx5ri8fAipdTRDX7tTxLaWmdQ&s"
+                        alt="Automation">
+                    <h3>Automation</h3>
+                    <p>Automate workflows to increase productivity.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Section -->
+        <section id="solutions" class="solutions">
+            <h2>Our Solutions</h2>
+            <div class="solutions-content">
+                <div class="solution">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/007/038/825/small/abstract-technology-concept-particle-connection-background-with-blue-lights-vector.jpg"
+                        alt="Technology Solutions">
+                    <h3>Technology Solutions</h3>
+                    <p>Tailored IT solutions for seamless digital transformation.</p>
+                </div>
+                <div class="solution">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/007/038/825/small/abstract-technology-concept-particle-connection-background-with-blue-lights-vector.jpg"
+                        alt="Data Security Solutions">
+                    <h3>Data Security</h3>
+                    <p>Protect your critical data with state-of-the-art security measures.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Insights Section -->
+        <section id="insights" class="insights">
+            <h2>Insights</h2>
+            <div class="insight-articles">
+                <div class="insight-article">
+                    <h3>The Future of AI in Business</h3>
+                    <p>AI continues to evolve. Here's how it's shaping industries.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="insight-article">
+                    <h3>Maximizing Cloud Efficiency</h3>
+                    <p>Unlocking the full potential of cloud technologies.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="social-media">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                </div>
+
+                <div class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </div>
+
+                <div class="newsletter">
+                    <p>Stay Updated with Our Latest Insights</p>
+                    <form action="#">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
     </main>
 
-    <footer class="bg-gray-900 text-gray-300">
-      <div class="container mx-auto px-4 py-16">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <h3 class="text-2xl font-bold text-white mb-4">TechCorp</h3>
-            <p class="mb-4">
-              Empowering digital transformation worldwide with innovative solutions.
-            </p>
-          </div>
+    <script src="/main.js"></script>
 
-          <div>
-            <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
-            <ul class="space-y-2">
-              <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
-            </ul>
-          </div>
+</body>
 
-          <div>
-            <h4 class="text-lg font-semibold text-white mb-4">Contact</h4>
-            <ul class="space-y-2">
-              <li>1234 Technology Drive</li>
-              <li>Silicon Valley, CA 94025</li>
-              <li>contact@techcorp.com</li>
-              <li>+1 (555) 123-4567</li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 class="text-lg font-semibold text-white mb-4">Newsletter</h4>
-            <p class="mb-4">Stay updated with our latest news and updates.</p>
-            <form id="newsletter-form" class="flex">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                class="bg-gray-800 text-white px-4 py-2 rounded-l-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <button type="submit" class="bg-blue-600 px-4 py-2 rounded-r-lg hover:bg-blue-700 transition-colors">
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-
-        <div class="border-t border-gray-800 mt-12 pt-8 text-center">
-          <p>&copy; <span id="current-year"></span> TechCorp. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-
-    <script type="module" src="/main.js"></script>
-  </body>
 </html>
