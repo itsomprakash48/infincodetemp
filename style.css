@@ -9,6 +9,10 @@
     --bg-color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -262,7 +266,7 @@ span {
 
 /* Mission and Values Section */
 .mission-values {
-    padding: 60px 20px;
+    padding: 50px 20px;
     background-color: var(--bg-color);
     text-align: center;
 }
@@ -319,7 +323,7 @@ span {
 /* Services Section */
 .services {
     background-color: #f9f9f9;
-    padding: 60px 20px;
+    padding: 70px 20px;
     text-align: center;
 }
 
@@ -361,7 +365,7 @@ span {
 
 /* Solutions Section */
 .solutions {
-    padding: 60px 20px;
+    padding: 70px 20px;
     background-color: #fff;
     text-align: center;
 }
@@ -398,7 +402,7 @@ span {
 
 /* Insights Section */
 .insights {
-    padding: 60px 20px;
+    padding: 70px 20px;
     background-color: #f9f9f9;
     text-align: center;
 }
