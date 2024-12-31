@@ -6,389 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Infinicode - Digital Transformation Solutions</title>
-    <style>
-        /* Global Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f4f4f4;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* Header */
-        header {
-            background-color: #001F3D;
-            color: white;
-            padding: 20px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .nav-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-
-        .nav-bar .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            font-size: 16px;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #4CAF50;
-        }
-
-        /* Mobile Side Navbar */
-        .side-nav {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: -250px;
-            width: 250px;
-            height: 100%;
-            background-color: #001F3D;
-            padding-top: 60px;
-            z-index: 999;
-            transition: 0.3s;
-        }
-
-        .side-nav a {
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            font-size: 18px;
-            display: block;
-        }
-
-        .side-nav a:hover {
-            background-color: #4CAF50;
-        }
-
-        .side-nav .close-btn {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 30px;
-            color: white;
-            cursor: pointer;
-        }
-
-        .hamburger {
-            display: none;
-            font-size: 30px;
-            cursor: pointer;
-            color: white;
-        }
-
-        /* Hero Section */
-        .hero {
-            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/038/825/small/abstract-technology-concept-particle-connection-background-with-blue-lights-vector.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 30px;
-        }
-
-        .btn-main {
-            background-color: #4CAF50;
-            padding: 15px 30px;
-            font-size: 16px;
-            border-radius: 5px;
-            color: white;
-        }
-
-        /* About Section */
-        .about-us {
-            padding: 60px 20px;
-            background-color: white;
-            text-align: center;
-        }
-
-
-        .about-us h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-
-        .core-values {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 40px;
-        }
-
-
-        .value {
-            text-align: center;
-            max-width: 200px;
-        }
-
-
-        .value img {
-            width: 50px;
-            height: 50px;
-        }
-
-
-        /* Services Section */
-        .services {
-            background-color: #f9f9f9;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-
-        .services h2 {
-            font-size: 36px;
-            margin-bottom: 40px;
-        }
-
-
-        .service-cards {
-            display: flex;
-            justify-content: space-around;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-
-        .service-card {
-            background-color: white;
-            padding: 30px;
-            width: 250px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-            text-align: center;
-        }
-
-
-        .service-card:hover {
-            transform: scale(1.05);
-        }
-
-
-        .service-card img {
-            width: 50px;
-            height: 50px;
-        }
-
-
-        .service-card h3 {
-            font-size: 24px;
-            margin-top: 20px;
-        }
-
-
-        /* Solutions Section */
-        .solutions {
-            padding: 60px 20px;
-            background-color: #fff;
-            text-align: center;
-        }
-
-
-        .solutions h2 {
-            font-size: 36px;
-            margin-bottom: 40px;
-        }
-
-
-        .solutions-content {
-            display: flex;
-            justify-content: space-around;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-
-        .solution {
-            width: 300px;
-            text-align: center;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-
-        .solution img {
-            width: 50px;
-            height: 50px;
-        }
-
-
-        .solution h3 {
-            font-size: 24px;
-            margin-top: 20px;
-        }
-
-
-        /* Insights Section */
-        .insights {
-            padding: 60px 20px;
-            background-color: #f9f9f9;
-            text-align: center;
-        }
-
-
-        .insights h2 {
-            font-size: 36px;
-            margin-bottom: 40px;
-        }
-
-
-        .insight-articles {
-            display: flex;
-            justify-content: space-around;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-
-        .insight-article {
-            width: 300px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-
-        .insight-article h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-
-
-        .insight-article p {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-
-        .insight-article a {
-            color: #4CAF50;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #001F3D;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer-links {
-            list-style: none;
-            padding: 0;
-            margin-top: 20px;
-        }
-
-        .footer-links li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        .social-media {
-            margin-top: 20px;
-        }
-
-        .social-media a {
-            margin: 0 10px;
-            color: white;
-            font-size: 18px;
-        }
-
-        .newsletter {
-            margin-top: 30px;
-        }
-
-        .newsletter input {
-            padding: 10px;
-            width: 200px;
-            border-radius: 5px;
-            border: none;
-        }
-
-        .newsletter button {
-            background-color: #FF6600;
-            padding: 10px 20px;
-            border-radius: 5px;
-            color: white;
-            border: none;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-
-            /* Hide normal navigation bar and show hamburger */
-            nav ul {
-                display: none;
-            }
-
-            .hamburger {
-                display: block;
-            }
-
-            .side-nav {
-                display: block;
-            }
-
-            .nav-bar {
-                justify-content: space-between;
-            }
-
-            .side-nav.open {
-                left: 0;
-            }
-
-            /* Hide Footer Links on Mobile */
-            .footer-links {
-                display: none;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -437,29 +55,50 @@
             </div>
         </section>
 
-        <!-- About Us Section -->
+        <!-- About us section -->
         <section id="about-us" class="about-us">
-            <h2>Our Mission, Vision & Values</h2>
-            <p>We empower businesses globally with cutting-edge IT solutions.</p>
-            <div class="core-values">
-                <div class="value">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRhIUq-_rO0WlNRL4ZH3hYSN8VlDTTgz6Img&s"
-                        alt="Global Expertise">
-                    <p>Global Expertise</p>
-                </div>
-                <div class="value">
-                    <img src="https://cdn.artphotolimited.com/images/frames/1000x1000/50x50-wood-black-en.jpg"
-                        alt="Innovation">
-                    <p>Innovation at Core</p>
-                </div>
-                <div class="value">
-                    <img src="https://cdn.artphotolimited.com/images/frames/1000x1000/50x50-wood-black-en.jpg"
-                        alt="Technology Leadership">
-                    <p>Technology Leadership</p>
+            <div class="about">
+                <img src="img/girl.jpg" class="pic" />
+                <div class="text">
+                    <h2>About Us</h2>
+                    <h5>IT & <span>Consultancy</span></h5>
+                    <p>Infinicode is a forward-thinking technology company, committed to delivering tailored solutions that drive innovation
+                    and success. Our multidisciplinary team explores emerging trends to help clients navigate the ever-evolving digital
+                    landscape. By prioritizing excellence and collaboration, we foster trusted relationships built upon shared growth
+                    and continuous improvement.</p>
+                    </p>
+                    <div class="data">
+                        <a href="#" class="hire">Hire us</a>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Our Mission and Values Section -->
+        <section id="mission-values" class="mission-values">
+            <div class="mission-container">
+                <h2>Our Mission & Values</h2>
+                <p>At Infinicode, our mission is to enable businesses to achieve their fullest potential through innovation, 
+                cutting-edge technology, and unmatched expertise.</p>
+                <div class="values">
+                    <div class="value-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/888/888843.png" alt="Innovation Icon">
+                        <h3>Innovation</h3>
+                        <p>We thrive on creating innovative solutions tailored to your needs.</p>
+                    </div>
+                    <div class="value-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Integrity Icon">
+                        <h3>Integrity</h3>
+                        <p>Our foundation is built on trust, transparency, and ethical practices.</p>
+                    </div>
+                    <div class="value-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3187/3187477.png" alt="Excellence Icon">
+                        <h3>Excellence</h3>
+                        <p>We are committed to delivering unparalleled services to our clients.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Services Section -->
         <section id="services" class="services">
@@ -553,13 +192,7 @@
         </footer>
     </main>
 
-    <script>
-        function toggleSideNav() {
-            var sideNav = document.getElementById('sideNav');
-            sideNav.classList.toggle('open');
-        }
-    </script>
-
+    <script src="main.js"></script>
 </body>
 
 </html>
