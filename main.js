@@ -1,6 +1,9 @@
 function toggleSideNav() {
-    var sideNav = document.getElementById('sideNav');
+    const sideNav = document.getElementById('sideNav');
+    const hamburger = document.querySelector('.hamburger');
+    
     sideNav.classList.toggle('open');
+    hamburger.classList.toggle('hide');
 }
 // filepath: /home/omprakash/infincodetemp/main.js
 document.addEventListener('DOMContentLoaded', function() {
@@ -19,8 +22,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-function toggleSideNav() {
-    var sideNav = document.getElementById('sideNav');
-    sideNav.classList.toggle('open');
-}
