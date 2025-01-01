@@ -2,7 +2,6 @@
  * Fonts:
  * Poppins - Google Fonts (https://fonts.google.com/specimen/Poppins)
  * License: Open Font License
- * Image - unsplash
  */
 
 /* Global Styles */
@@ -146,8 +145,6 @@ nav ul li a:hover {
     color: white;
 }
 
-
-
 /* About Section */
 .about-us {
     display: flex;
@@ -224,7 +221,7 @@ span {
     background: #000;
 }
 
-/* Responsive Design */
+/* Responsive Design for About Section */
 @media screen and (max-width: 768px) {
     .about {
         flex-direction: column;
@@ -257,8 +254,6 @@ span {
         line-height: 1.6;
     }
 }
-
-/* end about us  */
 
 @media screen and (max-width: 480px) {
     .text h2 {
@@ -443,60 +438,111 @@ span {
     color: #4CAF50;
 }
 
-/* Footer */
-footer {
-    background-color: #001F3D;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
+/* Footer Styles */
+.footer {
+    background: #10182F;
+    padding: 20px 0;
+    width: 100%;
 }
 
-.footer-content {
-    max-width: 1200px;
+.footer-row {
+    max-width: 1280px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
 }
 
-.footer-links {
+.footer-col {
+    flex: 1;
+    min-width: 120px;
+}
+
+.footer-col h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer-col .links {
     list-style: none;
-    padding: 0;
-    margin-top: 20px;
 }
 
-.footer-links li {
-    display: inline;
-    margin-right: 20px;
+.footer-col .links li {
+    margin-bottom: 10px;
 }
 
-.social-media {
-    margin-top: 20px;
+.footer-col .links li a {
+    text-decoration: none;
+    color: #bfbfbf;
+    transition: 0.3s ease;
 }
 
-.social-media a {
-    margin: 0 10px;
-    color: white;
-    font-size: 18px;
+.footer-col .links li a:hover {
+    color: #fff;
 }
 
-.newsletter {
+.footer-col p {
+    margin: 20px 0;
+    color: #bfbfbf;
+    max-width: 300px;
+}
+
+.footer-col form {
+    display: flex;
+    gap: 5px;
+}
+
+.footer-col input {
+    height: 40px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #7489C6;
+    caret-color: #fff;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+    color: #ccc;
+}
+
+.footer-col form button {
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+    background: #cecccc;
+}
+
+.footer-col .icons {
+    display: flex;
     margin-top: 30px;
+    gap: 30px;
 }
 
-.newsletter input {
-    padding: 10px;
-    width: 200px;
-    border-radius: 5px;
-    border: none;
+.footer-col .icons i {
+    color: #afb6c7;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-.newsletter button {
-    background-color: #FF6600;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: white;
-    border: none;
+.footer-col .icons i:hover {
+    color: #fff;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         display: none;
@@ -521,4 +567,22 @@ footer {
     .footer-links {
         display: none;
     }
+
+    .footer-row {
+        padding: 20px;
+        gap: 1rem;
+    }
+
+    .footer-col form {
+        display: block;
+    }
+
+    .footer-col form :where(input, button) {
+        width: 100%;
+    }
+
+    .footer-col form button {
+        margin: 10px 0 0 0;
+    }
 }
+
