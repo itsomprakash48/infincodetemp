@@ -76,13 +76,19 @@ nav ul li a:hover {
     display: none;
     position: fixed;
     top: 0;
-    right: -250px; /* Change from left to right */
+    right: -250px;
     width: 250px;
     height: 100%;
     background-color: #001F3D;
     overflow-x: hidden;
-    transition: 0.3s;
-    padding-top: 60px;
+    transition: all 0.3s ease;
+    padding-top: 10px;
+    z-index: 1000; /* Higher than header's z-index */
+}
+
+.side-nav.open {
+    right: 0;
+    display: block;
 }
 
 .side-nav a {
@@ -96,10 +102,11 @@ nav ul li a:hover {
 
 .side-nav a:hover {
     background-color: #4CAF50;
+    color: white;
 }
 
 .side-nav .close-btn {
-    position: absolute;
+    position: left;
     top: 0;
     right: 25px; /* Change from left to right */
     font-size: 36px;
