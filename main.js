@@ -2,6 +2,7 @@ function toggleSideNav() {
     var sideNav = document.getElementById('sideNav');
     sideNav.classList.toggle('open');
 }
+// filepath: /home/omprakash/infincodetemp/main.js
 document.addEventListener('DOMContentLoaded', function() {
     var navLinks = document.querySelectorAll('nav ul li a, .side-nav a');
     navLinks.forEach(function(link) {
