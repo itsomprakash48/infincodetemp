@@ -2,6 +2,7 @@
  * Fonts:
  * Poppins - Google Fonts (https://fonts.google.com/specimen/Poppins)
  * License: Open Font License
+ * Image - unsplash
  */
 
 /* Global Styles */
@@ -76,20 +77,22 @@ nav ul li a:hover {
     display: none;
     position: fixed;
     top: 0;
-    left: -250px;
+    right: -250px; /* Change from left to right */
     width: 250px;
     height: 100%;
     background-color: #001F3D;
-    padding-top: 60px;
-    z-index: 999;
+    overflow-x: hidden;
     transition: 0.3s;
+    padding-top: 60px;
 }
 
 .side-nav a {
-    color: white;
-    padding: 10px 15px;
-    font-size: 18px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
     display: block;
+    transition: 0.3s;
 }
 
 .side-nav a:hover {
@@ -98,11 +101,10 @@ nav ul li a:hover {
 
 .side-nav .close-btn {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
+    top: 0;
+    right: 25px; /* Change from left to right */
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 .hamburger {
@@ -513,7 +515,7 @@ footer {
     }
 
     .side-nav.open {
-        left: 0;
+        right: 0;
     }
 
     .footer-links {
