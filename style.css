@@ -122,7 +122,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('/img/heroimage.svg');
+    background-image: url('img/heroimage.svg');
     background-size: cover;
     background-position: center;
     height: 100vh;
