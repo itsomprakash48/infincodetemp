@@ -184,7 +184,7 @@ nav ul li a:hover {
 }
 
 .text h2 {
-    color: #333;
+    color: #001F3D;
     font-size: 90px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -215,7 +215,7 @@ span {
 
 .hire {
     font-size: 18px;
-    background: #4070f4;
+    background: #001F3D;
     color: #fff;
     text-decoration: none;
     border: none;
@@ -324,90 +324,196 @@ span {
     color: #666;
 }
 
-/* Services Section */
-.services {
+/* Services Section - Using Features Style */
+#services.features-section {
     background-color: var(--bg-color);
     padding: 70px 20px;
     text-align: center;
 }
 
-.services h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+#services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
-.service-cards {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    flex-wrap: wrap;
+#services .grid {
+    display: grid;
+    gap: 2rem;
 }
 
-.service-card {
-    background-color: white;
-    padding: 30px;
-    width: 250px;
+#services .feature-card {
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
-.service-card:hover {
-    transform: scale(1.05);
+#services .feature-card:hover {
+    transform: translateY(-5px);
 }
 
-.service-card img {
-    width: 50px;
-    height: 50px;
+#services .feature-icon {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1.5rem;
+    background-color: #e9d5ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.service-card h3 {
-    font-size: 24px;
-    margin-top: 20px;
+#services .feature-icon svg {
+    width: 2rem;
+    height: 2rem;
+    color: #001F3D;
 }
 
-/* Solutions Section */
+#services .feature-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #001F3D;
+    margin-bottom: 0.75rem;
+}
 
-.solutions {
+#services .feature-text {
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+#services .feature-link {
+    color: #001F3D;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#services .feature-link:hover {
+    color: #4CAF50;
+}
+
+#services .feature-link svg {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.25rem;
+}
+
+/* Responsive Grid */
+@media (min-width: 640px) {
+    #services .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    #services .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/* Add new Features section CSS */
+
+.features-section {
+    background-color: var(--bg-color);
     padding: 70px 20px;
-    background-color:var(--bg-color);
     text-align: center;
 }
 
-.solutions h2 {
+.features-section h2 {
     font-size: 36px;
+    color: #001F3D;
     margin-bottom: 40px;
+    position: relative;
+    text-transform: capitalize;
 }
 
-.solutions-content {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    flex-wrap: wrap;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
-.solution {
-    width: 300px;
-    text-align: center;
-    padding: 20px;
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
-.solution img {
-    width: 50px;
-    height: 50px;
+.feature-card:hover {
+    transform: translateY(-5px);
 }
 
-.solution h3 {
-    font-size: 24px;
-    margin-top: 20px;
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1.5rem;
+    background-color: #e9d5ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.feature-icon svg {
+    width: 2rem;
+    height: 2rem;
+    color: #001F3D;
+}
 
+.feature-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #001F3D;
+    margin-bottom: 0.75rem;
+}
 
+.feature-text {
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
 
+.feature-link {
+    color: #001F3D;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.feature-link:hover {
+    color: #4CAF50;
+}
+
+.feature-link svg {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.25rem;
+}
+
+@media (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 /* Pricing Section */
 
 .pricing-section {
