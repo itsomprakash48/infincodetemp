@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <title>Infinicode - Digital Transformation Solutions</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,12 +21,13 @@
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#solutions">Solutions</a></li>
                     <li><a href="#industries">Industries</a></li>
                     <li><a href="#about-us">About Us</a></li>
                     <li><a href="#insights">Insights</a></li>
-                    <li><a href="/pages/contacts.html" class="cta-btn">Contact Us</a></li>
+                    <li><a href="#contact" class="cta-btn">Contact Us</a></li>
                 </ul>
             </nav>
             <div class="hamburger" onclick="toggleSideNav()" aria-label="Open menu">&#9776;</div>
@@ -36,12 +38,9 @@
     <div id="sideNav" class="side-nav" aria-label="Mobile Menu">
         <span class="close-btn" onclick="toggleSideNav()" aria-label="Close menu">&times;</span>
         <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#solutions">Solutions</a>
-        <a href="#industries">Industries</a>
         <a href="#about-us">About Us</a>
         <a href="#insights">Insights</a>
-        <a href="/pages/contacts.html" class="cta-btn">Contact Us</a>
+        <a href="#contact" class="cta-btn">Contact Us</a>
     </div>
 
     <!-- Main Content -->
@@ -58,7 +57,7 @@
         <!-- About us section -->
         <section id="about-us" class="about-us">
             <div class="about">
-                <img src="img/girl.webp" class="pic" />
+                <img src="img/longo.png" class="pic" />
                 <div class="text">
                     <h2>About Us</h2>
                     <h5>IT & <span>Consultancy</span></h5>
@@ -78,8 +77,10 @@
         <section id="mission-values" class="mission-values">
             <div class="mission-container">
                 <h2>Our Mission & Values</h2>
-                <p>At Infinicode, our mission is to enable businesses to achieve their fullest potential through innovation, 
-                cutting-edge technology, and unmatched expertise.</p>
+                <p>At Infinicode, we empower businesses to unlock their fullest potential through innovation and cutting-edge technology.
+                    Our expertise drives transformative solutions that enable growth and adaptability in a dynamic digital world.
+                    We prioritize collaboration and excellence to help organizations stay ahead of the curve.
+                    Together, we shape a future built on innovation, integrity, and success.</p>
                 <div class="values">
                     <div class="value-item">
                         <img src="https://cdn-icons-png.flaticon.com/512/888/888843.png" alt="Innovation Icon">
@@ -101,92 +102,317 @@
         </section>
 
         <!-- Services Section -->
-        <section id="services" class="services">
-            <h2>Our Services</h2>
-            <div class="service-cards">
-                <div class="service-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTsuvQc6ZcIx5ri8fAipdTRDX7tTxLaWmdQ&s"
-                        alt="Cloud Computing">
-                    <h3>Develop Website for Clients</h3>
-                    <p>Custom applications tailored to meet your business needs.</p>
-                </div>
-                <div class="service-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTsuvQc6ZcIx5ri8fAipdTRDX7tTxLaWmdQ&s"
-                        alt="IT Consulting">
-                    <h3>Develop Android/iOS Apps</h3>
-                    <p>Mobile applications designed for both Android and iOS platforms.</p>
-                </div>
-                <div class="service-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTsuvQc6ZcIx5ri8fAipdTRDX7tTxLaWmdQ&s"
-                        alt="AI Solutions">
-                    <h3>AI Solutions</h3>
-                    <p>Innovative AI-powered solutions to boost efficiency.</p>
-                </div>
-                <div class="service-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTsuvQc6ZcIx5ri8fAipdTRDX7tTxLaWmdQ&s"
-                        alt="Automation">
-                    <h3>Automation</h3>
-                    <p>Automate workflows to increase productivity.</p>
+        <!-- Services Section -->
+        <section id="services" class="features-section py-12">
+            <div class="container text-center">
+                <h2>Our Services</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Web Development -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Web Development</h3>
+                        <p class="feature-text">Custom responsive websites and web applications built with modern technologies.</p>
+                        <a href="#" class="feature-link">Learn More
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+        
+                    <!-- Android Development -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Android Development</h3>
+                        <p class="feature-text">Native Android apps designed for optimal performance and user experience.</p>
+                        <a href="#" class="feature-link">Learn More
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+        
+                    <!-- iOS Development -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">iOS Development</h3>
+                        <p class="feature-text">Custom iOS applications built for Apple's ecosystem with latest Swift technologies.</p>
+                        <a href="#" class="feature-link">Learn More
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+        
+                    <!-- Cloud Services -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Cloud Services</h3>
+                        <p class="feature-text">Scalable cloud solutions using AWS, Azure, and Google Cloud platforms.</p>
+                        <a href="#" class="feature-link">Learn More
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+        
+                    <!-- AI Integration -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">AI Integration</h3>
+                        <p class="feature-text">Implement AI solutions to automate and enhance your business processes.</p>
+                        <a href="#" class="feature-link">Learn More
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+        
+                    <!-- Digital Transformation -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Digital Transformation</h3>
+                        <p class="feature-text">Guide your business through digital transformation with modern solutions.</p>
+                        <a href="#" class="feature-link">Learn More
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+        
+                    <!-- Cyber Security -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Cyber Security</h3>
+                        <p class="feature-text">Protect your digital assets with advanced security solutions and monitoring.</p>
+                        <a href="#" class="feature-link">Learn More
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+        
+                    <!-- Consulting -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">IT Consulting</h3>
+                        <p class="feature-text">Strategic IT consulting to help you make informed technology decisions.</p>
+                        <a href="#" class="feature-link">Learn More
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
+
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <h2>Our Plans</h2>
+        <div class="pricing">
+            <div class="plan">
+                <h3>Basic</h3>
+                <div class="price">FREE</div>
+                <ul class="features">
+                    <li><i class="fas fa-check-circle"></i> 5 Projects</li>
+                    <li><i class="fas fa-check-circle"></i> Basic Support</li>
+                    <li><i class="fas fa-check-circle"></i> 2GB Storage</li>
+                    <li><i class="fas fa-times-circle"></i> Custom Domain</li>
+                    <li><i class="fas fa-times-circle"></i> Analytics</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+    
+            <div class="plan popular">
+                <span>Most Popular</span>
+                <h3>Pro</h3>
+                <div class="price">$29<small>/month</small></div>
+                <ul class="features">
+                    <li><i class="fas fa-check-circle"></i> Unlimited Projects</li>
+                    <li><i class="fas fa-check-circle"></i> Priority Support</li>
+                    <li><i class="fas fa-check-circle"></i> 10GB Storage</li>
+                    <li><i class="fas fa-check-circle"></i> Custom Domain</li>
+                    <li><i class="fas fa-check-circle"></i> Analytics</li>
+                </ul>
+                <button>Start Pro</button>
+            </div>
+    
+            <div class="plan">
+                <h3>Enterprise</h3>
+                <div class="price">Custom</div>
+                <ul class="features">
+                    <li><i class="fas fa-check-circle"></i> Unlimited Everything</li>
+                    <li><i class="fas fa-check-circle"></i> 24/7 Support</li>
+                    <li><i class="fas fa-check-circle"></i> 100GB Storage</li>
+                    <li><i class="fas fa-check-circle"></i> Advanced Security</li>
+                    <li><i class="fas fa-check-circle"></i> Custom Solutions</li>
+                </ul>
+                <button>Contact Us</button>
+            </div>
+        </div>
+    </section>
 
         <!-- Solutions Section -->
-        <section id="solutions" class="solutions">
-            <h2>Our Solutions</h2>
-            <div class="solutions-content">
-                <div class="solution">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/007/038/825/small/abstract-technology-concept-particle-connection-background-with-blue-lights-vector.jpg"
-                        alt="Technology Solutions">
-                    <h3>Technology Solutions</h3>
-                    <p>Tailored IT solutions for seamless digital transformation.</p>
-                </div>
-                <div class="solution">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/007/038/825/small/abstract-technology-concept-particle-connection-background-with-blue-lights-vector.jpg"
-                        alt="Data Security Solutions">
-                    <h3>Data Security</h3>
-                    <p>Protect your critical data with state-of-the-art security measures.</p>
-                </div>
-            </div>
-        </section>
+        <!-- Remove this section -->
+<!-- <section id="solutions" class="solutions">...</section> -->
 
-        <!-- Insights Section -->
-        <section id="insights" class="insights">
-            <h2>Insights</h2>
-            <div class="insight-articles">
-                <div class="insight-article">
-                    <h3>The Future of AI in Business</h3>
-                    <p>AI continues to evolve. Here's how it's shaping industries.</p>
-                    <a href="#">Read More</a>
+<!-- Add new Features section -->
+<section id="features" class="features-section py-12">
+    <div class="container text-center">
+        <h2>Our Features</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Rapid Development -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
                 </div>
-                <div class="insight-article">
-                    <h3>Maximizing Cloud Efficiency</h3>
-                    <p>Unlocking the full potential of cloud technologies.</p>
-                    <a href="#">Read More</a>
-                </div>
+                <h3 class="feature-title">Rapid Development</h3>
+                <p class="feature-text">Quick turnaround with agile methodology and efficient development practices.</p>
+                <a href="#" class="feature-link">Learn More
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
             </div>
-        </section>
+
+            <!-- 24/7 Support -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">24/7 Support</h3>
+                <p class="feature-text">Round-the-clock technical support and maintenance for your applications.</p>
+                <a href="#" class="feature-link">Learn More
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Custom Solutions -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Custom Solutions</h3>
+                <p class="feature-text">Tailored software solutions designed specifically for your business needs.</p>
+                <a href="#" class="feature-link">Learn More
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Scalable Architecture -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Scalable Architecture</h3>
+                <p class="feature-text">Build solutions that grow with your business using cloud-native technologies.</p>
+                <a href="#" class="feature-link">Learn More
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- end of solutions section -->
+
 
         <!-- Footer -->
-        <footer>
-            <div class="footer-content">
-                <div class="social-media">
-                    <a href="#" aria-label="Facebook">Facebook</a>
-                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                    <a href="#" aria-label="Twitter">Twitter</a>
+        <footer class="footer">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Info</h4>
+                    <ul class="links">
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#insights">Insights</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-
-                <div class="footer-links">
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+        
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="links">
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#insights">Latest Insights</a></li>
+                        <li><a href="#mission-values">Our Values</a></li>
+                        <li><a href="#about-us">Who We Are</a></li>
+                    </ul>
                 </div>
-
-                <div class="newsletter">
-                    <p>Stay Updated with Our Latest Insights</p>
+        
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">GDPR</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for a weekly dose of news, updates, and exclusive offers.</p>
                     <form action="#">
-                        <input type="email" placeholder="Enter your email" required>
-                        <button type="submit">Subscribe</button>
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">SUBSCRIBE</button>
                     </form>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
                 </div>
             </div>
         </footer>
